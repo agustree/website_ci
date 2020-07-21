@@ -23,11 +23,15 @@ class Welcome extends CI_Controller {
 		// SEO META
 		$data['meta_keyword'] = $data['pengaturan']->nama;
 		$data['meta_description'] = $data['pengaturan']->deskripsi;
-
-		$this->load->view('frontend/v_header',$data);
+        $this->load->view('frontend/v_header',$data);
 		$this->load->view('frontend/v_homepage',$data);
-		$this->load->view('frontend/v_footer',$data);*/
-		$this->load->view('frontend/homepage_edu');
+		$this->load->view('frontend/v_footer',$data);
+		*/
+
+		$this->load->view('frontend/v_headerEdu');
+		$this->load->view('frontend/v_homeEdu');
+		$this->load->view('frontend/v_footerEdu');
+		//$this->load->view('frontend/homepage_edu');
 	}
 
 	public function single($slug)
