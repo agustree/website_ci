@@ -121,9 +121,10 @@ class Welcome extends CI_Controller {
 		$data['meta_keyword'] = $data['pengaturan']->nama;
 		$data['meta_description'] = $data['pengaturan']->deskripsi;
 
-		$this->load->view('frontend/v_header',$data);
-		$this->load->view('frontend/v_page',$data);
-		$this->load->view('frontend/v_footer',$data);
+		//$this->load->view('frontend/v_header',$data);
+		//$this->load->view('frontend/v_page',$data);
+		//$this->load->view('frontend/v_footer',$data);
+		$this->load->view('frontend/v_pendaftaran',$data);
 	}
 
 	public function kategori($slug)

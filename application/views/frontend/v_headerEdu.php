@@ -145,7 +145,7 @@
 									</ul>-->
 								</li>
 								<li class="menu-item menu-item-has-children"><a href="#">Tentang KAMI</a></li>
-								<li class="menu-item menu-item-has-children"><a href="#">Pendaftaran</a>
+								<li class="menu-item menu-item-has-children"><a href="<?php echo base_url('page/layanan'); ?>">Pendaftaran</a>
 									<!--<ul class="sub-menu">
 										<li class="menu-item"><a href="typography.html">Typography</a></li>
 										<li class="menu-item"><a href="shortcodes.html">Shortcodes</a></li>
