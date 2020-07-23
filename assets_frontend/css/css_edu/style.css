@@ -2853,7 +2853,7 @@ blockquote cite {
 }
 
 .comments_wrap .comments_field label {
-	display:none;
+	/*display:none;*/
 }
 .comments_wrap .comments_field input,
 .comments_wrap .comments_field textarea {

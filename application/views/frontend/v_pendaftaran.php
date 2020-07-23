@@ -43,19 +43,14 @@
     <div class="body_wrap">
         <div class="page_wrap">
             <div class="top_panel_fixed_wrap"></div>
-            <header class="top_panel_wrap bg_tint_dark">
+              <header class="top_panel_wrap bg_tint_dark">
 				<!-- User menu -->
                 <div class="menu_user_wrap">
                     <div class="content_wrap clearfix">
                         <div class="menu_user_area menu_user_right menu_user_nav_area">
                             <ul id="menu_user" class="menu_user_nav">
-                                <li class="menu_user_bookmarks">
-                                    <a href="#" class="bookmarks_show icon-star-1" title="Show bookmarks"></a>
-                                    <ul class="bookmarks_list">
-                                        <li><a href="#" class="bookmarks_add icon-star-empty" title="Add the current page into bookmarks">Add bookmark</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu_user_controls">
+                              
+                                <!--<li class="menu_user_controls">
                                     <a href="#">
 										<span class="user_avatar">
 											<img alt="" src="http://1.gravatar.com/avatar/45e4d63993e55fa97a27d49164bce80f?s=16&#038;d=mm&#038;r=g" srcset="http://1.gravatar.com/avatar/45e4d63993e55fa97a27d49164bce80f?s=32&amp;d=mm&amp;r=g 2x" class="avatar avatar-16 photo" height="16" width="16" />
@@ -65,13 +60,25 @@
                                         <li><a href="#" class="icon icon-doc-inv">New post</a></li>
                                         <li><a href="#" class="icon icon-cog-1">Settings</a></li>
                                     </ul>
-                                </li>
+                                </li>-->
                                 <li class="menu_user_logout">
-									<a href="#" class="icon icon-logout">Logout</a>
+									<a href="#" class="icon icon-logout">Kontak Kami</a>
 								</li>
+								  <li class="menu_user_bookmarks">
+                                    <a href="https://api.whatsapp.com/send?phone=081217401644" class="bookmarks_show fa fa-whatsapp" style="font-size:20px ; margin-top: 2px;" title="Show bookmarks"></a>                          
+                                  </li>
+                                  <li class="menu_user_bookmarks">
+                                    <a href=" https://www.instagram.com/irtsuga_s/" class="bookmarks_show fa fa-instagram" style="font-size:20px; margin-top:2px; " title="Show bookmarks"></a>                          
+                                  </li>
+                                   <li class="menu_user_bookmarks">
+                                    <a href="http://www.facebook.com/TemanBelajar" class="bookmarks_show fa fa-facebook" style="font-size:20px; margin-top:2px; " title="Show bookmarks"></a>                          
+                                  </li>
+                                   <!--<li class="menu_user_bookmarks">
+                                    <a href="#" class="bookmarks_show fa fa-twitter" style="font-size:20px; margin-top: 2px;" title="Show bookmarks"></a>                          
+                                  </li>-->
                             </ul>
                         </div>
-                        <div class="menu_user_area menu_user_left menu_user_contact_area">Contact us on 0 800 123-4567 or <a href="#">support@themerex.net</a></div>
+                        <!--<div class="menu_user_area menu_user_left menu_user_contact_area">Contact us on 0 800 123-4567 or <a href="#">support@themerex.net</a></div>-->
                     </div>
                 </div>
 				<!-- /User menu -->
@@ -81,8 +88,9 @@
 						<!-- Logo -->
                         <div class="logo">
                             <a href="index.html">
-								<img src="http://placehold.it/259x30" class="logo_main" alt="">
-								<img src="http://placehold.it/259x30" class="logo_fixed" alt="">
+								<img src="<?php echo base_url(); ?>assets_frontend/img/img_edu/BRANDLOGO.png" class="logo_main" alt="">
+								<!--<img src="http://placehold.it/259x30" class="logo_fixed" alt="">-->
+								<img src="<?php echo base_url(); ?>assets_frontend/img/img_edu/BRANDLOGO.png" class="logo_fixed" alt="">
 							</a>
                         </div>
 						<!-- Logo -->
@@ -106,15 +114,16 @@
                         <a href="#" class="menu_main_responsive_button icon-menu-1"></a>
 						<nav class="menu_main_nav_area">
 							<ul id="menu_main" class="menu_main_nav">
-								<li class="menu-item menu-item-has-children"><a href="index.html">Homepage</a>
-									<ul class="sub-menu">
-										<li class="menu-item"><a href="index.html">Homepage Wide</a></li>
+								<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="index.html">Beranda</a>
+									<!--<ul class="sub-menu">
+										<li class="menu-item current-menu-item page_item current_page_item"><a href="index.html">Homepage Wide</a></li>
 										<li class="menu-item"><a href="homepage-2.html">Homepage Boxed</a></li>
 										<li class="menu-item"><a href="homepage-3.html">Homepage Photos</a></li>
-									</ul>
+									</ul>-->
 								</li>
-								<li class="menu-item menu-item-has-children"><a href="#">Features</a>
-									<ul class="sub-menu">
+								<li class="menu-item menu-item-has-children"><a href="#">Tentang KAMI</a></li>
+								<li class="menu-item menu-item-has-children"><a href="<?php echo base_url('page/layanan'); ?>">Pendaftaran</a>
+									<!--<ul class="sub-menu">
 										<li class="menu-item"><a href="typography.html">Typography</a></li>
 										<li class="menu-item"><a href="shortcodes.html">Shortcodes</a></li>
 										<li class="menu-item"><a href="video-tutorials.html">Video Tutorials</a></li>
@@ -123,10 +132,11 @@
 										<li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
 										<li class="menu-item"><a href="not-existing-page.html">Page 404</a></li>
 										<li class="menu-item"><a href="not-existing-page-2.html">Page 404 (Style 2)</a></li>
-									</ul>
+									</ul>-->
 								</li>
-								<li class="menu-item menu-item-has-children"><a href="courses-streampage.html">Courses</a>
-									<ul class="sub-menu">
+
+								<li class="menu-item menu-item-has-children"><a href="courses-streampage.html">Tentor</a>
+									<!--<ul class="sub-menu">
 										<li class="menu-item"><a href="courses-streampage.html">All courses</a></li>
 										<li class="menu-item"><a href="free-course.html">Free course</a></li>
 										<li class="menu-item"><a href="paid-course.html">Paid course</a></li>
@@ -137,11 +147,11 @@
 												<li class="menu-item"><a href="lesson-from-paid-course.html">Lesson from paid course</a></li>
 											</ul>
 										</li>
-									</ul>
+									</ul>-->
 								</li>
-								<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="team-members.html">Teachers</a>
+								<!--<li class="menu-item menu-item-has-children"><a href="team-members.html">Teachers</a>
 									<ul class="sub-menu">
-										<li class="menu-item current-menu-item"><a href="team-members.html">Teachers Team</a></li>
+										<li class="menu-item"><a href="team-members.html">Teachers Team</a></li>
 										<li class="menu-item"><a href="personal-page.html">Teacher&#8217;s Personal Page</a></li>
 									</ul>
 								</li>
@@ -177,7 +187,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="menu-item"><a href="products.html">Shop</a></li>
+								<li class="menu-item"><a href="products.html">Shop</a></li>-->
 							</ul>
 						</nav>
 						<!-- /Navigation -->
@@ -190,6 +200,7 @@
 
 
 
+		<!--
 			<div class="page-header">
 	<h3>Kostumer Baru</h3>
 </div>
@@ -222,9 +233,87 @@
 	<div class="form-group">						
 		<input type="submit" value="Simpan" class="btn btn-primary">	
 	</div>
-</form>
+</form>-->
 
-		
+		 <div class="content_wrap">
+                    <div class="content">
+                        <section class="related_wrap related_wrap_empty"></section>
+                        <section class="comments_wrap">
+                            <!--<div id="comments" class="comments_list_wrap">
+                                <h2 class="section_title comments_list_title">1 Comment</h2>
+                                <ul class="comments_list">
+                                    <li class="comment even thread-even depth-1 comment_item">
+                                        <div class="comment_author_avatar">
+											<img alt="" src="http://2.gravatar.com/avatar/8979720d3c48d311027d086f6e15c72b?s=75&#038;d=mm&#038;r=g" srcset="http://2.gravatar.com/avatar/8979720d3c48d311027d086f6e15c72b?s=150&amp;d=mm&amp;r=g 2x" class="avatar avatar-75 photo" height="75" width="75" />
+										</div>
+                                        <div class="comment_content">
+                                            <div class="comment_info">
+                                                <span class="comment_author">TRX_admin</span>
+                                                <span class="comment_date"><span class="comment_date_label">Posted</span> <span class="comment_date_value">February 10, 2015</span></span>
+                                                <span class="comment_time">1:17 pm</span>
+                                            </div>
+                                            <div class="comment_text_wrap">
+                                                <div class="comment_text">
+                                                    <p>John is a wonderful teacher. His lessons are always interesting and informative. I am happy to attend his lectures.</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment_reply">
+												<a rel="nofollow" class="comment-reply-link" href="#">Reply</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="comments_pagination"></div>
+                            </div>-->
+                            <div class="comments_form_wrap">
+                                <h2 class="section_title comments_form_title">Form Siswa</h2>
+                                <div class="comments_form">
+                                    <div id="respond" class="comment-respond">                                    
+                                        <form action="#" method="post" id="commentform" class="comment-form">
+                                            <p class="comments_notes">Your email address will not be published. Required fields are marked *</p>
+                                            <div class="columns_wrap">
+                                                <div class="comments_field comments_author column-1_1">
+                                                    <label for="author" class="required">Nama</label>
+                                                    <input id="author" name="author" type="text" placeholder="Nama *" value="" size="30" aria-required="true" />
+                                                </div>
+                                                    <div class="comments_field comments_author column-1_2">
+                                                    <label for="author" class="required">Nomor HP</label>
+                                                    <input id="author" name="" type="text" placeholder="Nomor HP *" value="" size="30" aria-required="true" />
+                                                </div>
+                                                  <div class="comments_field comments_author column-1_1">
+                                                    <label for="author" class="required">Nama Ortu</label>
+                                                    <input id="author" name="author" type="text" placeholder="Nama Ortu *" value="" size="30" aria-required="true" />
+                                                </div>
+                                                  <div class="comments_field comments_author column-1_2">
+                                                    <label for="author" class="required">Nomor HP Ortu</label>
+                                                    <input id="author" name="" type="text" placeholder="Nomor HP Ortu *" value="" size="30" aria-required="true" />
+                                                </div>
+                                           
+                                               <!-- <div class="comments_field comments_site column-1_1">
+                                                    <label for="url" class="optional">Website</label>
+                                                    <input id="url" name="url" type="text" placeholder="Website" value="" size="30" aria-required="true" />
+                                                </div>-->
+                                            </div>
+                                            <div class="comments_field comments_message">
+                                                <label for="comment" class="required">Alamat</label>
+                                                <textarea id="comment" name="comment" placeholder="Alamat *" aria-required="true"></textarea>
+                                            </div>
+                                           
+                                              <div class="comments_field comments_author">
+                                                <label for="comment" class="required">Kelas</label>
+                                               <input type="radio" id="male" name="gender" value="male">
+                                            </div>
+                                            <p class="form-submit">
+                                                <input name="submit" type="submit" id="send_comment" class="submit" value="Post Comment" />
+                                                <input type="hidden" name="comment_post_ID" value="553" id="comment_post_ID" />
+                                                <input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>	
 	       
 			<!-- /Widgets Footer -->
 			<!-- Contacts Footer -->
@@ -245,47 +334,18 @@
 							1234 Some St
 						</address>
                     </div>
-                    <div class="sc_socials sc_socials_size_big">
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_facebook">
-								<span class="sc_socials_hover social_facebook"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_pinterest">
-								<span class="sc_socials_hover social_pinterest"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_twitter">
-								<span class="sc_socials_hover social_twitter"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_gplus">
-								<span class="sc_socials_hover social_gplus"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_rss">
-								<span class="sc_socials_hover social_rss"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_dribbble">
-								<span class="sc_socials_hover social_dribbble"></span>
-							</a>
-						</div>
-                    </div>
+                    
+                     <div class="copyright_wrap">
+		                <div class="content_wrap">
+		                    <p>© 2015 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+		                </div>
+		            </div>
                 </div>
+
             </footer>
             <!-- /Contacts Footer -->
 			<!-- Copyright -->
-            <div class="copyright_wrap">
-                <div class="content_wrap">
-                    <p>© 2015 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
-                </div>
-            </div>
+         
 			<!-- /Copyright -->
         </div>
     </div>

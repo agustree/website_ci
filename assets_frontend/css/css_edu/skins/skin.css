@@ -384,7 +384,7 @@ input[type="checkbox"]:checked + label:before {
 .body_filled .footer_wrap,
 .body_filled .widget_area.sidebar_style_light,
 .body_filled.article_style_boxed .page_wrap {
-	background-color: #f4f7f9;
+	background-color: #ffffff;
 }
 .article_style_boxed.layout_excerpt .content,
 .article_style_boxed[class*="single-"] .content > article,
