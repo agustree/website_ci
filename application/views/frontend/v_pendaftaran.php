@@ -273,35 +273,120 @@
                                             <div class="columns_wrap">
                                                 <div class="comments_field comments_author column-1_1">
                                                     <label for="author" class="required">Nama</label>
-                                                    <input id="author" name="author" type="text" placeholder="Nama *" value="" size="30" aria-required="true" />
+                                                    <input id="author" name="author" type="text" placeholder="Nama " value="" size="30" aria-required="true" />
                                                 </div>
                                                     <div class="comments_field comments_author column-1_2">
                                                     <label for="author" class="required">Nomor HP</label>
-                                                    <input id="author" name="" type="text" placeholder="Nomor HP *" value="" size="30" aria-required="true" />
+                                                    <input id="author" name="" type="text" placeholder="Nomor HP " value="" size="30" aria-required="true" />
                                                 </div>
                                                   <div class="comments_field comments_author column-1_1">
                                                     <label for="author" class="required">Nama Ortu</label>
-                                                    <input id="author" name="author" type="text" placeholder="Nama Ortu *" value="" size="30" aria-required="true" />
+                                                    <input id="author" name="author" type="text" placeholder="Nama Ortu" value="" size="30" aria-required="true" />
                                                 </div>
                                                   <div class="comments_field comments_author column-1_2">
                                                     <label for="author" class="required">Nomor HP Ortu</label>
-                                                    <input id="author" name="" type="text" placeholder="Nomor HP Ortu *" value="" size="30" aria-required="true" />
+                                                    <input id="author" name="" type="text" placeholder="Nomor HP Ortu " value="" size="30" aria-required="true" />
                                                 </div>
                                            
-                                               <!-- <div class="comments_field comments_site column-1_1">
-                                                    <label for="url" class="optional">Website</label>
-                                                    <input id="url" name="url" type="text" placeholder="Website" value="" size="30" aria-required="true" />
-                                                </div>-->
-                                            </div>
-                                            <div class="comments_field comments_message">
+                                                <div class="comments_field comments_message">
                                                 <label for="comment" class="required">Alamat</label>
-                                                <textarea id="comment" name="comment" placeholder="Alamat *" aria-required="true"></textarea>
+                                                <textarea id="comment" name="comment" placeholder="Alamat" aria-required="true"></textarea>
+                                                </div>
                                             </div>
-                                           
-                                              <div class="comments_field comments_author">
-                                                <label for="comment" class="required">Kelas</label>
-                                               <input type="radio" id="male" name="gender" value="male">
+                                           	<div class="col2-set" id="customer_details">
+											<div class="col-1">
+												<div class="woocommerce-billing-fields">
+													<p class="form-row form-row-wide address-field" id="billing_country_field">
+														<label for="billing_country" class="">Kelas <abbr class="required" title="required">*</abbr></label>
+														<select name="billing_country" id="billing_country" class="country_to_state country_select">
+															<option value="">Pilih tingkat&hellip;</option>
+														
+															<option value="AF">SMA</option>
+															<option value="AL">SMP</option>
+															<option value="DZ">SD</option>
+															<option value="AD">TK</option>
+														
+															
+														</select>
+													</p>
+												</div>
+											</div>
+										    </div>
+										     <div class="columns_wrap">
+										     <div class="comments_field comments_author column-1_1">
+                                                    <label for="author" class="required">Asal sekolah</label>
+                                                    <input id="author" name="author" type="text" placeholder="Asal sekolah *" value="" size="30" aria-required="true" />
+                                                </div>
                                             </div>
+                                             	<div class="col2-set" id="customer_details">
+											<div class="col-1">
+												<div class="woocommerce-billing-fields">
+													<p class="form-row form-row-wide address-field" id="billing_country_field">
+														<label for="billing_country" class="">Mata Pelajaran <abbr class="required" title="required">*</abbr></label>
+														<select name="billing_country" id="billing_country" class="country_to_state country_select">
+															<option value="">Pilih Mapel&hellip;</option>
+														
+															<option value="AF">Matematika</option>
+															<option value="AL">Bahasa Inggris</option>
+															<option value="DZ">Biologi</option>
+															<option value="AD">Fisika</option>
+														
+															
+														</select>
+													</p>
+												</div>
+											</div>
+										    </div>
+                                             <!-- <div style="">
+                                               <label for="comment" class="required">Kelas</label><br>
+                                               <label style="margin-right: 50px;" >SMA</label>
+                                                
+                                               <input type="radio" id="SMA" name="KELAS" value="male">
+                                               <label style="margin-right: 30px;" >XI</label>
+                                               <input type="radio" id="SMA" name="KELAS" value="male">
+                                               <label style="margin-right: 30px;" >XII</label>
+                                               <input type="radio" id="SMA" name="KELAS" value="male">
+                                               <label style="margin-right: 30px;" >X</label>
+
+                                               <br>
+
+                                                <label style="margin-right: 85px;" ></label>
+                                                 <input type="radio" id="peminatan" name="jurusan" value="male">
+                                               <label style="margin-right: 25px;" >IPA</label>
+                                               <input type="radio" id="peminatan" name="jurusan" value="male">
+                                               <label style="margin-right: 30px;" >IPS</label>
+
+                                               <br><br>
+
+                                               <label style="margin-right: 50px;" >SMP</label>
+
+                                               <input type="radio" id="SMP" name="KELASI" value="male">
+                                               <label style="margin-right: 30px;" >VII</label>
+                                               <input type="radio" id="SMP" name="KELASI" value="male">
+                                               <label style="margin-right: 30px;" >VIII</label>
+                                               <input type="radio" id="SMP" name="KELASI" value="male">
+                                               <label style="margin-right: 30px;" >IX</label>
+
+                                               <br><br>
+
+                                                <label style="margin-right: 65px;" >SD</label>
+
+                                               <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >I</label>
+                                               <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >II</label>
+                                               <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >III</label>
+                                                <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >IV</label>
+                                                <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >V</label>
+                                                <input type="radio" id="SD" name="KELAS0" value="male">
+                                               <label style="margin-right: 30px;" >VI</label>
+                                            
+
+                                            </div>-->
+
                                             <p class="form-submit">
                                                 <input name="submit" type="submit" id="send_comment" class="submit" value="Post Comment" />
                                                 <input type="hidden" name="comment_post_ID" value="553" id="comment_post_ID" />
