@@ -34,7 +34,40 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets_frontend/css/css_edu/slider-style.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets_frontend/css/css_edu/custom-style.css" type="text/css" media="all" />
 	
+<script>
+/*	function getValue(option) {
+ // alert(option.value);
+  if ( option.value = "SMA";) {
+    peminatantampil.style.display = "inline";
+    alert("oke");
+  } else {
+    peminatantampil.style.display = "none";
+  }
+}*/
 
+function val() {
+	 var peminatantampil = document.getElementById("peminatan");
+    d = document.getElementById("billing_country").value;
+   if(d==="SMA"){ 
+		peminatantampil.style.display = "inline";
+  	 }else{
+ 		peminatantampil.style.display = "none";
+	}
+}
+
+/*function myFunction() {
+ // var x = document.getElementById("billing_country");
+  var peminatantampil = document.getElementById("peminatan");
+  //var e = document.getElementById("ddlViewBy");
+//var strUser = x.options[x.selectedIndex].text;
+  if ( document.getElementById("billing_country").value = "SMA";) {
+    peminatantampil.style.display = "inline";
+    alert("oke");
+  } else {
+    peminatantampil.style.display = "none";
+  }
+}*/
+</script>
 </head>
 
 <body class="page body_style_fullscreen body_filled article_style_boxed top_panel_style_dark top_panel_opacity_solid top_panel_above menu_right sidebar_hide">
@@ -298,13 +331,27 @@
 												<div class="woocommerce-billing-fields">
 													<p class="form-row form-row-wide address-field" id="billing_country_field">
 														<label for="billing_country" class="">Kelas <abbr class="required" title="required">*</abbr></label>
+														<select name="billing_country" id="billing_country" onchange="val()" class="country_to_state country_select">
+															<option value="">Pilih tingkat&hellip;</option>
+														
+															<option value="SMA">SMA</option>
+															<option value="SMP">SMP</option>
+															<option value="SD">SD</option>
+															<option value="TK">TK</option>
+														
+															
+														</select>
+													</p>
+												</div> 
+												<div style="display: none;" class="woocommerce-billing-fields" id="peminatan">
+													<p class="form-row form-row-wide address-field" id="billing_country_field">
+														<label for="billing_country" class="">Peminatan <abbr class="required" title="required">*</abbr></label>
 														<select name="billing_country" id="billing_country" class="country_to_state country_select">
 															<option value="">Pilih tingkat&hellip;</option>
 														
-															<option value="AF">SMA</option>
-															<option value="AL">SMP</option>
-															<option value="DZ">SD</option>
-															<option value="AD">TK</option>
+															<option value="AF">IPA</option>
+															<option value="AL">IPS</option>
+														
 														
 															
 														</select>
@@ -336,6 +383,37 @@
 													</p>
 												</div>
 											</div>
+											<div class="col-1">
+												<div class="woocommerce-billing-fields">
+													<p class="form-row form-row-wide address-field" id="billing_country_field">
+														<label for="billing_country" class="">Tentukan Hari <abbr class="required" title="required">*</abbr></label>
+														<select name="billing_country" id="billing_country" class="country_to_state country_select">
+															<option value="">Pilih Hari&hellip;</option>
+														
+															<option value="AF">Matematika</option>
+															<option value="AL">Bahasa Inggris</option>
+															<option value="DZ">Biologi</option>
+															<option value="AD">Fisika</option>
+														
+															
+														</select>
+													</p>
+												</div>
+											</div>
+									       <div class="columns_wrap">
+											   <div class="comments_field comments_author column-1_3">
+                                                    <label for="author" class="required">Jam</label>
+                                                    <input id="author" name="" type="number" placeholder="Nomor HP " value="" size="30" aria-required="true" />                                                    
+                                                </div>
+                                                <div class="comments_field comments_author column-1_3">
+                                             		<select name="billing_country" id="author" style="margin-top: 30px;">
+                                             				<option value="AF">Matematika</option>
+															<option value="AL">Bahasa Inggris</option>							
+														</select>
+                                                </div>
+                                            </div>
+
+
 										    </div>
                                              <!-- <div style="">
                                                <label for="comment" class="required">Kelas</label><br>
